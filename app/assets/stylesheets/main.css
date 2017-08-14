@@ -607,3 +607,13 @@ body
   }
 
 }
+
+.success-message {
+  color: #fff;
+  font-weight: bold;
+}
+
+.error-message {
+  color: #C00003;
+  font-weight: bold;
+}

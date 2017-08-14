@@ -1,0 +1,4 @@
+$('.message').remove();
+$('input[type="submit"]').prop('disabled', true);
+$('#subscription-form').append("<p class='message error-message'><%= @error_message %></p>");
+$('input[type="submit"]').prop('disabled', false);

@@ -1,2 +1,5 @@
-$("#subscriber_email").val('');
+$('.message').remove();
 $('input[type="submit"]').prop('disabled', true);
+$('input[name="subscriber[email]"]').val('');
+$('#subscription-form').append("<p class='message success-message'>Successfully subscribed!</p>");
+$('input[type="submit"]').prop('disabled', false);

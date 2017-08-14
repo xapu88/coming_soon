@@ -1,7 +1,7 @@
 <div id="container">
   <img src="/assets/logo.png" id="logo">
   <h1>Coming Soon</h1>
-  <%= form_tag('/subscribe', remote: true) do %>
+  <%= form_tag('/subscribe', remote: true, id: "subscription-form") do %>
     <%= email_field_tag "subscriber[email]", nil, placeholder: "Enter email to receive updates", required: true %>
     <%= submit_tag "Send" %>
   <% end %>
