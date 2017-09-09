@@ -13,7 +13,7 @@ class WelcomeController < ApplicationController
       @gb = Gibbon::Request.new
       list = Rails.application.secrets.mailchimp[:list_id]
       begin
-        @gb.lists(list).members.create(body: {email_address: @subscriber.email, status: "subscribed", double_optin: false})
+        @gb.lists(list).members.create(body: {email_address: @subscriber.email, status: "pending", double_optin: true})
         respond_to do |format|
           format.js { return }
           format.html { redirect_to :back }
